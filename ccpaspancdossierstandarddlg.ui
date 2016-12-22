@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CcpaSpancDossierStandardDlg</class>
+ <widget class="QDialog" name="CcpaSpancDossierStandardDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>810</width>
+    <height>667</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dossier</string>
+  </property>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>491</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="dossierLabel">
+        <property name="text">
+         <string>Dossier</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="dossier"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="dateDeContrLeLabel">
+        <property name="text">
+         <string>Date de contrôle</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QDateEdit" name="date">
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="contrLeLabel">
+        <property name="text">
+         <string>Contrôle</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="CcpaSpancCombo" name="controle"/>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLabel" name="labelAdresse">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Propriété</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="CcpaSpancCombo" name="propriete"/>
+        </item>
+        <item>
+         <widget class="QToolButton" name="loupePropriete">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="plusPropriete">
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="effacePropriete">
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="8" column="1">
+       <widget class="QLabel" name="labelPropriete">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="prTraitementLabel">
+        <property name="text">
+         <string>Prétraitement</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="CcpaSpancCombo" name="prTraitementComboBox"/>
+      </item>
+      <item row="11" column="0">
+       <widget class="QLabel" name="traitementLabel">
+        <property name="text">
+         <string>Traitement</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="1">
+       <widget class="CcpaSpancCombo" name="traitement"/>
+      </item>
+      <item row="12" column="0">
+       <widget class="QLabel" name="agrMentLabel">
+        <property name="text">
+         <string>Agrément</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="1">
+       <widget class="QLineEdit" name="agrement"/>
+      </item>
+      <item row="13" column="0">
+       <widget class="QLabel" name="ventilationPrimaireLabel">
+        <property name="text">
+         <string>Ventilation primaire</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="1">
+       <widget class="QCheckBox" name="vp"/>
+      </item>
+      <item row="14" column="0">
+       <widget class="QLabel" name="ventilationSecondaireLabel">
+        <property name="text">
+         <string>Ventilation secondaire</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="1">
+       <widget class="QCheckBox" name="vs"/>
+      </item>
+      <item row="15" column="0">
+       <widget class="QLabel" name="exutoireLabel">
+        <property name="text">
+         <string>Exutoire</string>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="1">
+       <widget class="CcpaSpancCombo" name="exutoire"/>
+      </item>
+      <item row="16" column="0">
+       <widget class="QLabel" name="conformeLabel">
+        <property name="text">
+         <string>Conforme</string>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="1">
+       <widget class="QCheckBox" name="conformeCheckBox"/>
+      </item>
+      <item row="17" column="0">
+       <widget class="QLabel" name="dLaiLabel">
+        <property name="text">
+         <string>Délai ( en années)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="1">
+       <widget class="QComboBox" name="delai">
+        <item>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="18" column="0">
+       <widget class="QLabel" name="urgenceLabel">
+        <property name="text">
+         <string>Urgence</string>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="1">
+       <widget class="QCheckBox" name="urgenceCheckBox"/>
+      </item>
+      <item row="19" column="1">
+       <widget class="QDialogButtonBox" name="buttonBox">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="standardButtons">
+         <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+        </property>
+       </widget>
+      </item>
+      <item row="21" column="1">
+       <widget class="QLabel" name="facturation">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="CcpaSpancCombo" name="proprietaire"/>
+        </item>
+        <item>
+         <widget class="QToolButton" name="loupeProprietaire">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="plusProprietaire">
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="effaceProprietaire">
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Propriétaire</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CcpaSpancCombo</class>
+   <extends>QComboBox</extends>
+   <header>ccpaspanccombo.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>dossier</tabstop>
+  <tabstop>date</tabstop>
+  <tabstop>controle</tabstop>
+  <tabstop>propriete</tabstop>
+  <tabstop>loupePropriete</tabstop>
+  <tabstop>plusPropriete</tabstop>
+  <tabstop>effacePropriete</tabstop>
+  <tabstop>proprietaire</tabstop>
+  <tabstop>loupeProprietaire</tabstop>
+  <tabstop>plusProprietaire</tabstop>
+  <tabstop>effaceProprietaire</tabstop>
+  <tabstop>prTraitementComboBox</tabstop>
+  <tabstop>traitement</tabstop>
+  <tabstop>agrement</tabstop>
+  <tabstop>vp</tabstop>
+  <tabstop>vs</tabstop>
+  <tabstop>exutoire</tabstop>
+  <tabstop>conformeCheckBox</tabstop>
+  <tabstop>delai</tabstop>
+  <tabstop>urgenceCheckBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>CcpaSpancDossierStandardDlg</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>CcpaSpancDossierStandardDlg</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

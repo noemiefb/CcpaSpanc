@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CcpaSpancAdresseDlg</class>
+ <widget class="QDialog" name="CcpaSpancAdresseDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>584</width>
+    <height>341</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Adresse</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>559</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="2" column="0">
+     <widget class="QLabel" name="norueL">
+      <property name="text">
+       <string>No dans la rue</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="norue"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="typerueL">
+      <property name="text">
+       <string>Type de voie</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="typerue"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="nomDeLaRueLabel">
+      <property name="text">
+       <string>Nom de la rue</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="nomrue"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="adresse2Label">
+      <property name="text">
+       <string>Adresse 2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="adresse2"/>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="adresse3Label">
+      <property name="text">
+       <string>Adresse 3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLineEdit" name="adresse3"/>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="villeLabel">
+      <property name="text">
+       <string>Ville</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="CcpaSpancCombo" name="ville"/>
+    </item>
+    <item row="11" column="0">
+     <widget class="QLabel" name="codePostalLabel">
+      <property name="text">
+       <string>Code Postal</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="1">
+     <widget class="QLineEdit" name="cp"/>
+    </item>
+    <item row="12" column="0">
+     <widget class="QLabel" name="cedexLabel">
+      <property name="text">
+       <string>Cedex</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="1">
+     <widget class="QLineEdit" name="cedex"/>
+    </item>
+    <item row="13" column="0">
+     <widget class="QLabel" name="paysLabel">
+      <property name="text">
+       <string>Pays</string>
+      </property>
+     </widget>
+    </item>
+    <item row="13" column="1">
+     <widget class="CcpaSpancCombo" name="pays"/>
+    </item>
+    <item row="17" column="1">
+     <widget class="QDialogButtonBox" name="buttonBox">
+      <property name="standardButtons">
+       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="communeLabel">
+      <property name="text">
+       <string>Commune</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLineEdit" name="commune"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CcpaSpancCombo</class>
+   <extends>QComboBox</extends>
+   <header>ccpaspanccombo.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>norue</tabstop>
+  <tabstop>typerue</tabstop>
+  <tabstop>nomrue</tabstop>
+  <tabstop>adresse2</tabstop>
+  <tabstop>adresse3</tabstop>
+  <tabstop>commune</tabstop>
+  <tabstop>ville</tabstop>
+  <tabstop>cp</tabstop>
+  <tabstop>cedex</tabstop>
+  <tabstop>pays</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
